@@ -15,7 +15,7 @@ engine = create_engine("sqlite:///Resources/")
 
 #Postgres DB
 connection_url = 'postgresql+psycopg2://user:password@localhost:5432/california_housing'
-engine = create_engine(connection_url)
+engine = create_engine('postgresql+psycopg2://user:password@localhost:5432/california_housing')
 
 #use Base to reflect DB and reflect tables
 Base = automap_base()
